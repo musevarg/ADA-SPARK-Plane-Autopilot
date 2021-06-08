@@ -17,3 +17,4 @@ certain altitude.
 
 It was implemented using [GNAT Community IDE](https://www.adacore.com/community).
 
+![](https://raw.githubusercontent.com/musevarg/ADA-SPARK-Plane-Autopilot/main/gnat.png)
