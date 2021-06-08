@@ -1,0 +1,6832 @@
+{
+  "spark": [
+    {
+      "name": "plane",
+      "sloc": [
+        {
+          "file": "plane.ads",
+          "line": 5
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane.Invariant",
+      "sloc": [
+        {
+          "file": "plane.ads",
+          "line": 45
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane.EnoughFuel",
+      "sloc": [
+        {
+          "file": "plane.ads",
+          "line": 61
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane.IsReadyForTakeOff",
+      "sloc": [
+        {
+          "file": "plane.ads",
+          "line": 65
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane.GetReadyForTakeOff",
+      "sloc": [
+        {
+          "file": "plane.ads",
+          "line": 53
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane.FillTank",
+      "sloc": [
+        {
+          "file": "plane.ads",
+          "line": 57
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane.TakeOff",
+      "sloc": [
+        {
+          "file": "plane.ads",
+          "line": 73
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane.CorrectAltitude",
+      "sloc": [
+        {
+          "file": "plane.ads",
+          "line": 79
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane.CorrectSpeed",
+      "sloc": [
+        {
+          "file": "plane.ads",
+          "line": 82
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane.FlightMode",
+      "sloc": [
+        {
+          "file": "plane.ads",
+          "line": 86
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane.IsLanded",
+      "sloc": [
+        {
+          "file": "plane.ads",
+          "line": 96
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane.Landing",
+      "sloc": [
+        {
+          "file": "plane.ads",
+          "line": 92
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane.Landed",
+      "sloc": [
+        {
+          "file": "plane.ads",
+          "line": 99
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane.Towed",
+      "sloc": [
+        {
+          "file": "plane.ads",
+          "line": 103
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane.ChangeSpeed",
+      "sloc": [
+        {
+          "file": "plane.ads",
+          "line": 107
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane.ChangeAltitude",
+      "sloc": [
+        {
+          "file": "plane.ads",
+          "line": 110
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane.ToggleLandingGear",
+      "sloc": [
+        {
+          "file": "plane.ads",
+          "line": 113
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane.WarningLights",
+      "sloc": [
+        {
+          "file": "plane.ads",
+          "line": 117
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane.Put_Line",
+      "sloc": [
+        {
+          "file": "plane.adb",
+          "line": 7
+        }
+      ],
+      "spark": "spec"
+    }
+  ],
+  "flow": [
+  ],
+  "session_map": {
+    " 1": "D:\\Misc\\Napier\\Formal Approaches to Software Engineering\\ADA\\Coursework\\obj\\gnatprove\\plane__landing__2",
+    " 2": "D:\\Misc\\Napier\\Formal Approaches to Software Engineering\\ADA\\Coursework\\obj\\gnatprove\\plane__filltank",
+    " 3": "D:\\Misc\\Napier\\Formal Approaches to Software Engineering\\ADA\\Coursework\\obj\\gnatprove\\plane__takeoff__2",
+    " 4": "D:\\Misc\\Napier\\Formal Approaches to Software Engineering\\ADA\\Coursework\\obj\\gnatprove\\plane__towed__2",
+    " 5": "D:\\Misc\\Napier\\Formal Approaches to Software Engineering\\ADA\\Coursework\\obj\\gnatprove\\plane__flightmode",
+    " 6": "D:\\Misc\\Napier\\Formal Approaches to Software Engineering\\ADA\\Coursework\\obj\\gnatprove\\plane__getreadyfortakeoff",
+    " 7": "D:\\Misc\\Napier\\Formal Approaches to Software Engineering\\ADA\\Coursework\\obj\\gnatprove\\plane__togglelandinggear",
+    " 8": "D:\\Misc\\Napier\\Formal Approaches to Software Engineering\\ADA\\Coursework\\obj\\gnatprove\\plane__changespeed",
+    " 9": "D:\\Misc\\Napier\\Formal Approaches to Software Engineering\\ADA\\Coursework\\obj\\gnatprove\\plane__changealtitude",
+    " 10": "D:\\Misc\\Napier\\Formal Approaches to Software Engineering\\ADA\\Coursework\\obj\\gnatprove\\plane__landed__2",
+    " 11": "D:\\Misc\\Napier\\Formal Approaches to Software Engineering\\ADA\\Coursework\\obj\\gnatprove\\plane__warninglights"
+  },
+  "proof": [
+    {
+      "file": "plane.ads",
+      "line": 94,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane.Landing",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 92
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 108,
+              "time": 2.30000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.ads",
+      "check_line": 94,
+      "check_col": 14,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.30000004172325E-01
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 50,
+      "col": 20,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane.FillTank",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 57
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 9.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 50,
+      "check_col": 20,
+      "session_dir": 2,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 9.00000035762787E-02
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 51,
+      "col": 37,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane.FillTank",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 57
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 87,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 51,
+      "check_col": 37,
+      "session_dir": 2,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.09999999403954E-01
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 51,
+      "col": 47,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane.FillTank",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 57
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 122,
+              "time": 1.30000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 51,
+      "check_col": 47,
+      "session_dir": 2,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.29999995231628E-01
+        }
+      }
+    },
+    {
+      "file": "plane.ads",
+      "line": 59,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane.FillTank",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 57
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 1.30000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.ads",
+      "check_line": 59,
+      "check_col": 14,
+      "session_dir": 2,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.29999995231628E-01
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 72,
+      "col": 10,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane.TakeOff",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 73
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.90000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 72,
+      "check_col": 10,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.89999997615814E-01
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 76,
+      "col": 10,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane.TakeOff",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 73
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.90000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 76,
+      "check_col": 10,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.89999997615814E-01
+        }
+      }
+    },
+    {
+      "file": "plane.ads",
+      "line": 75,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane.TakeOff",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 73
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 44,
+              "time": 2.80000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 135,
+              "time": 2.30000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 42,
+              "time": 2.50000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.ads",
+      "check_line": 75,
+      "check_col": 14,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 3,
+          "max_steps": 1,
+          "max_time": 2.80000001192093E-01
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 160,
+      "col": 10,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane.Towed",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 103
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.60000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 160,
+      "check_col": 10,
+      "session_dir": 4,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.59999996423721E-01
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 163,
+      "col": 10,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane.Towed",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 103
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 109,
+              "time": 2.30000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 163,
+      "check_col": 10,
+      "session_dir": 4,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.30000004172325E-01
+        }
+      }
+    },
+    {
+      "file": "plane.ads",
+      "line": 105,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane.Towed",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 103
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.70000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.ads",
+      "check_line": 105,
+      "check_col": 14,
+      "session_dir": 4,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.70000001788139E-01
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 87,
+      "col": 23,
+      "rule": "VC_DIVISION_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane.FlightMode",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 86
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.70000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 87,
+      "check_col": 23,
+      "session_dir": 5,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.70000001788139E-01
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 88,
+      "col": 26,
+      "rule": "VC_DIVISION_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane.FlightMode",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 86
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.20000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 88,
+      "check_col": 26,
+      "session_dir": 5,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.19999998807907E-01
+        }
+      }
+    },
+    {
+      "file": "plane.ads",
+      "line": 88,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane.FlightMode",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 86
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 299,
+              "time": 3.80000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 308,
+              "time": 3.90000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.30000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.ads",
+      "check_line": 88,
+      "check_col": 14,
+      "session_dir": 5,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 3,
+          "max_steps": 1,
+          "max_time": 3.89999985694885E-01
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 25,
+      "col": 10,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane.GetReadyForTakeOff",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 53
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 70,
+              "time": 2.70000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 25,
+      "check_col": 10,
+      "session_dir": 6,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.70000010728836E-01
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 28,
+      "col": 10,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane.GetReadyForTakeOff",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 53
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 357,
+              "time": 3.40000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 142,
+              "time": 3.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 28,
+      "check_col": 10,
+      "session_dir": 6,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 3.40000003576279E-01
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 32,
+      "col": 10,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane.GetReadyForTakeOff",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 53
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 21,
+              "time": 2.80000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 32,
+      "check_col": 10,
+      "session_dir": 6,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.80000001192093E-01
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 36,
+      "col": 10,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane.GetReadyForTakeOff",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 53
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.90000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 36,
+      "check_col": 10,
+      "session_dir": 6,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.89999997615814E-01
+        }
+      }
+    },
+    {
+      "file": "plane.ads",
+      "line": 54,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane.GetReadyForTakeOff",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 53
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 1740,
+              "time": 5.00000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.ads",
+      "check_line": 54,
+      "check_col": 14,
+      "session_dir": 6,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.00000000000000E-01
+        }
+      }
+    },
+    {
+      "file": "plane.ads",
+      "line": 114,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane.ToggleLandingGear",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 113
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 91,
+              "time": 2.50000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 98,
+              "time": 1.70000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.ads",
+      "check_line": 114,
+      "check_col": 14,
+      "session_dir": 7,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 2.50000000000000E-01
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 184,
+      "col": 31,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane.ChangeSpeed",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 107
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 21,
+              "time": 3.00000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 184,
+      "check_col": 31,
+      "session_dir": 8,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 3.00000011920929E-01
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 186,
+      "col": 32,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane.ChangeSpeed",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 107
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 177,
+              "time": 3.00000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 186,
+      "check_col": 32,
+      "session_dir": 8,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 3.00000011920929E-01
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 186,
+      "col": 46,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane.ChangeSpeed",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 107
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 237,
+              "time": 3.60000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 186,
+      "check_col": 46,
+      "session_dir": 8,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 3.60000014305115E-01
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 199,
+      "col": 31,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane.ChangeSpeed",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 107
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 21,
+              "time": 2.80000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 199,
+      "check_col": 31,
+      "session_dir": 8,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.80000001192093E-01
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 201,
+      "col": 32,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane.ChangeSpeed",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 107
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 185,
+              "time": 3.00000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 201,
+      "check_col": 32,
+      "session_dir": 8,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 3.00000011920929E-01
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 201,
+      "col": 46,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane.ChangeSpeed",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 107
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 254,
+              "time": 2.80000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 201,
+      "check_col": 46,
+      "session_dir": 8,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.80000001192093E-01
+        }
+      }
+    },
+    {
+      "file": "plane.ads",
+      "line": 108,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane.ChangeSpeed",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 107
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 956,
+              "time": 5.80000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.ads",
+      "check_line": 108,
+      "check_col": 14,
+      "session_dir": 8,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.79999983310699E-01
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 236,
+      "col": 27,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane.ChangeAltitude",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 110
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 2.30000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 236,
+      "check_col": 27,
+      "session_dir": 9,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.30000004172325E-01
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 239,
+      "col": 35,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane.ChangeAltitude",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 110
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 124,
+              "time": 2.80000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 239,
+      "check_col": 35,
+      "session_dir": 9,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.80000001192093E-01
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 239,
+      "col": 47,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane.ChangeAltitude",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 110
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 165,
+              "time": 3.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 239,
+      "check_col": 47,
+      "session_dir": 9,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 3.10000002384186E-01
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 252,
+      "col": 27,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane.ChangeAltitude",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 110
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 2.30000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 252,
+      "check_col": 27,
+      "session_dir": 9,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.30000004172325E-01
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 255,
+      "col": 35,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane.ChangeAltitude",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 110
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 124,
+              "time": 2.50000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 255,
+      "check_col": 35,
+      "session_dir": 9,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.50000000000000E-01
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 255,
+      "col": 47,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane.ChangeAltitude",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 110
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 165,
+              "time": 2.80000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 255,
+      "check_col": 47,
+      "session_dir": 9,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.80000001192093E-01
+        }
+      }
+    },
+    {
+      "file": "plane.ads",
+      "line": 111,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane.ChangeAltitude",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 110
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 59,
+              "time": 3.80000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.ads",
+      "check_line": 111,
+      "check_col": 14,
+      "session_dir": 9,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 3.79999995231628E-01
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 137,
+      "col": 10,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane.Landed",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 99
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.60000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 137,
+      "check_col": 10,
+      "session_dir": 10,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.59999996423721E-01
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 141,
+      "col": 10,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane.Landed",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 99
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 27,
+              "time": 1.90000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown (unknown)",
+              "steps": 187,
+              "time": 2.20000000000000E-01
+            },
+            "Z3": {
+              "result": "Valid",
+              "steps": 78299,
+              "time": 1.70000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 141,
+      "check_col": 10,
+      "session_dir": 10,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.89999997615814E-01
+        },
+        "Z3": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.70000001788139E-01
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 145,
+      "col": 10,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane.Landed",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 99
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 219,
+              "time": 2.20000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown (unknown)",
+              "steps": 223,
+              "time": 2.30000000000000E-01
+            },
+            "Z3": {
+              "result": "Valid",
+              "steps": 927180,
+              "time": 1.39000000000000E+00
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 145,
+      "check_col": 10,
+      "session_dir": 10,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.19999998807907E-01
+        },
+        "Z3": {
+          "count": 1,
+          "max_steps": 597,
+          "max_time": 1.38999998569489E+00
+        }
+      }
+    },
+    {
+      "file": "plane.adb",
+      "line": 149,
+      "col": 10,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane.Landed",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 99
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 736,
+              "time": 3.00000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 233,
+              "time": 2.80000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.adb",
+      "check_line": 149,
+      "check_col": 10,
+      "session_dir": 10,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 3.00000011920929E-01
+        }
+      }
+    },
+    {
+      "file": "plane.ads",
+      "line": 101,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane.Landed",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 99
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 1210,
+              "time": 4.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 135,
+              "time": 2.00000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.ads",
+      "check_line": 101,
+      "check_col": 14,
+      "session_dir": 10,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 4.09999996423721E-01
+        }
+      }
+    },
+    {
+      "file": "plane.ads",
+      "line": 119,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane.WarningLights",
+        "sloc": [
+          {
+            "file": "plane.ads",
+            "line": 117
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Timeout",
+              "steps": -1,
+              "time": 1
+            },
+            "Z3": {
+              "result": "Valid",
+              "steps": 77977,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane.ads",
+      "check_line": 119,
+      "check_col": 14,
+      "session_dir": 11,
+      "how_proved": "prover",
+      "stats": {
+        "Z3": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.09999999403954E-01
+        }
+      }
+    }
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.EnoughFuel",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 61
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Invariant",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 45
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane.IsReadyForTakeOff",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 65
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.EnoughFuel",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 61
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Invariant",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 45
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.EnoughFuel",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 61
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.Invariant",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 45
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane.IsReadyForTakeOff",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 65
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane_doors.OpenDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 25
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane_doors.UnlockDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 43
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane_engines.TurnOffEngines",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 28
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.IsLanded",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 96
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsLocked",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 48
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsOpened",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 33
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.OpenDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 25
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.UnlockDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 43
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.EnginesOff",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 35
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.EnginesOn",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.TurnOffEngines",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 28
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.IsLanded",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 96
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.DoorsLocked",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 48
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.DoorsOpened",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 33
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.OpenDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 25
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.UnlockDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 43
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.EnginesOff",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 35
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.EnginesOn",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.TurnOffEngines",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 28
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "plane.Landed",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 99
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "plane.FillTank",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 57
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane_engines.Accelerate",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 38
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane_engines.Decelerate",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 41
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.Accelerate",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 38
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.Decelerate",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 41
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.Accelerate",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 38
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.Decelerate",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 41
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "plane.ChangeSpeed",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 107
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane.FillTank",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 57
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.IsLanded",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 96
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsLocked",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 48
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsOpened",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 33
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.OpenDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 25
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.UnlockDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 43
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.EnginesOff",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 35
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.EnginesOn",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.TurnOffEngines",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 28
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane.Landed",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 99
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane_doors.OpenDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 25
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane_doors.UnlockDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 43
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane_engines.TurnOffEngines",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 28
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.IsLanded",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 96
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsLocked",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 48
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsOpened",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 33
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.OpenDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 25
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.UnlockDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 43
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.EnginesOff",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 35
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.EnginesOn",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.TurnOffEngines",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 28
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.IsLanded",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 96
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.DoorsLocked",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 48
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.DoorsOpened",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 33
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.OpenDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 25
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.UnlockDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 43
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.EnginesOff",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 35
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.EnginesOn",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.TurnOffEngines",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 28
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane.Landed",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 99
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane.FillTank",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 57
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.Accelerate",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 38
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.Decelerate",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 41
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane.ChangeSpeed",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 107
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane_engines.Accelerate",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 38
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane_engines.Decelerate",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 41
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.Accelerate",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 38
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.Decelerate",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 41
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.Accelerate",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 38
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.Decelerate",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 41
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane.ChangeSpeed",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 107
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane.FillTank",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 57
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane_doors.CloseDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 21
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane_doors.LockDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane_engines.TurnOnEngines",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 24
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.FillTank",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 57
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.IsReadyForTakeOff",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 65
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.CloseDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 21
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsLocked",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 48
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.LockDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.EnginesOff",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 35
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.TurnOnEngines",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 24
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.FillTank",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 57
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.IsReadyForTakeOff",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 65
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.CloseDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 21
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.DoorsLocked",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 48
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.LockDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.EnginesOff",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 35
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.TurnOnEngines",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 24
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "plane.GetReadyForTakeOff",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 53
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "plane.WarningLights",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 117
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.FillTank",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 57
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.IsReadyForTakeOff",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 65
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.CloseDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 21
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsLocked",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 48
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.LockDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.EnginesOff",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 35
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.TurnOnEngines",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 24
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane.GetReadyForTakeOff",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 53
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane.FillTank",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 57
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane_doors.CloseDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 21
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane_doors.LockDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane_engines.TurnOnEngines",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 24
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.FillTank",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 57
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.IsReadyForTakeOff",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 65
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.CloseDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 21
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsLocked",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 48
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.LockDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.EnginesOff",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 35
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.TurnOnEngines",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 24
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.FillTank",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 57
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.IsReadyForTakeOff",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 65
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.CloseDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 21
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.DoorsLocked",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 48
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.LockDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.EnginesOff",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 35
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.TurnOnEngines",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 24
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane.GetReadyForTakeOff",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 53
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane.WarningLights",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 117
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane.WarningLights",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 117
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "plane.ToggleLandingGear",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 113
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane.EnoughFuel",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 61
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane.ToggleLandingGear",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 113
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane.ToggleLandingGear",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 113
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane.EnoughFuel",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 61
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane.IsLanded",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 96
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane.IsLanded",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 96
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane_doors.CloseDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 21
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane_engines.TurnOffEngines",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 28
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.CloseDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 21
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.EnginesOn",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.TurnOffEngines",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 28
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.CloseDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 21
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.EnginesOn",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.TurnOffEngines",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 28
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "plane.Towed",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 103
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.CloseDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 21
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.EnginesOn",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.TurnOffEngines",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 28
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane.Towed",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 103
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane_doors.CloseDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 21
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane_engines.TurnOffEngines",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 28
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.CloseDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 21
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.EnginesOn",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.TurnOffEngines",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 28
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.CloseDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 21
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.EnginesOn",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.TurnOffEngines",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 28
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane.Towed",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 103
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane.ChangeAltitude",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 110
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane.ChangeSpeed",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 107
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane.GetReadyForTakeOff",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 53
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane.TakeOff",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 73
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.ChangeAltitude",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 110
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.ChangeSpeed",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 107
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.GetReadyForTakeOff",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 53
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.IsReadyForTakeOff",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 65
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.TakeOff",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 73
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsLocked",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 48
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.ChangeAltitude",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 110
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.ChangeSpeed",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 107
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.GetReadyForTakeOff",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 53
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.IsReadyForTakeOff",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 65
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.TakeOff",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 73
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.DoorsLocked",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 48
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "plane.TakeOff",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 73
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsLocked",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 48
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane.Invariant",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 45
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.ChangeAltitude",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 110
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.ChangeSpeed",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 107
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.GetReadyForTakeOff",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 53
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.IsReadyForTakeOff",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 65
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.TakeOff",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 73
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsLocked",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 48
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane.TakeOff",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 73
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane.ChangeAltitude",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 110
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane.ChangeSpeed",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 107
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane.GetReadyForTakeOff",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 53
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane.TakeOff",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 73
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.ChangeAltitude",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 110
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.ChangeSpeed",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 107
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.GetReadyForTakeOff",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 53
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.IsReadyForTakeOff",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 65
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.TakeOff",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 73
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsLocked",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 48
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.ChangeAltitude",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 110
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.ChangeSpeed",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 107
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.GetReadyForTakeOff",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 53
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.IsReadyForTakeOff",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 65
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.TakeOff",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 73
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.DoorsLocked",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 48
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane.TakeOff",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 73
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsLocked",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 48
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.DoorsLocked",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 48
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane.Invariant",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 45
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane.ToggleLandingGear",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 113
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.ToggleLandingGear",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 113
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.ToggleLandingGear",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 113
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "plane.ChangeAltitude",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 110
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.ToggleLandingGear",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 113
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane.ChangeAltitude",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 110
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane.ToggleLandingGear",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 113
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.ToggleLandingGear",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 113
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.ToggleLandingGear",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 113
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "warning_lights.TurnOffWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "warning_lights.TurnOnWarningLight",
+            "sloc": [
+              {
+                "file": "warning_lights.ads",
+                "line": 23
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane.ChangeAltitude",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 110
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane.ChangeAltitude",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 110
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane.ChangeSpeed",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 107
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.ChangeAltitude",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 110
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.ChangeSpeed",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 107
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.IsLanded",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 96
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.ChangeAltitude",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 110
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.ChangeSpeed",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 107
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.IsLanded",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 96
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "plane.Landing",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 92
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane.ChangeAltitude",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 110
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane.ChangeSpeed",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 107
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.ChangeAltitude",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 110
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.ChangeSpeed",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 107
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.CorrectAltitude",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 79
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.CorrectSpeed",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 82
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Invariant",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 45
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.ChangeAltitude",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 110
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.ChangeSpeed",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 107
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.CorrectAltitude",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 79
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.CorrectSpeed",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 82
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.Invariant",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 45
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "plane.FlightMode",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 86
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.ChangeAltitude",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 110
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.ChangeSpeed",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 107
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.IsLanded",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 96
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane.Landing",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 92
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane.ChangeAltitude",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 110
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane.ChangeSpeed",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 107
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.ChangeAltitude",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 110
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.ChangeSpeed",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 107
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.IsLanded",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 96
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.ChangeAltitude",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 110
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.ChangeSpeed",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 107
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.IsLanded",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 96
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane.Landing",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 92
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.ChangeAltitude",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 110
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.ChangeSpeed",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 107
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.CorrectAltitude",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 79
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.CorrectSpeed",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 82
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Invariant",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 45
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane.FlightMode",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 86
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane.ChangeAltitude",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 110
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane.ChangeSpeed",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 107
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.ChangeAltitude",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 110
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.ChangeSpeed",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 107
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.CorrectAltitude",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 79
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.CorrectSpeed",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 82
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Invariant",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 45
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.ChangeAltitude",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 110
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.ChangeSpeed",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 107
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.CorrectAltitude",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 79
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.CorrectSpeed",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 82
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.Invariant",
+            "sloc": [
+              {
+                "file": "plane.ads",
+                "line": 45
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane.Put_Line",
+            "sloc": [
+              {
+                "file": "plane.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane.FlightMode",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 86
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane.CorrectSpeed",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 82
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane.CorrectSpeed",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 82
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane.CorrectAltitude",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 79
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane.CorrectAltitude",
+          "sloc": [
+            {
+              "file": "plane.ads",
+              "line": 79
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "gnatwhy3.transformations.inline_trivial": 1.67187500000000E+00,
+    "codepeer results": 1.23619998339564E-03,
+    "init_why_sections": 1.06210005469620E-03,
+    "gnatwhy3.transformations.detect_polymorphism": 1.56250000000000E-02,
+    "globals/properties (advanced)": 3.97313013672829E-02,
+    "gnatwhy3.transformations.eliminate_literal": 9.37500000000000E-02,
+    "gnatwhy3.run_vcs": 7.00000000000000E+00,
+    "gnatwhy3.transformations.eliminate_algebraic_if_poly": 1.40625000000000E-01,
+    "gnatwhy3.transformations.eliminate_definition_if_poly": 7.81250000000000E-02,
+    "flow analysis": 1.30489006638527E-01,
+    "gnatwhy3.transformations.simplify_formula": 1.25000000000000E-01,
+    "marking": 1.79965998977423E-02,
+    "translation of standard": 8.87290015816689E-03,
+    "gnatwhy3.register_vcs": 1.03125000000000E+00,
+    "gnatwhy3.transformations.eliminate_epsilon": 9.37500000000000E-02,
+    "globals (basic)": 2.34197005629539E-02,
+    "gnatwhy3.schedule_vcs": 1.40625000000000E-01,
+    "gnatwhy3.transformations.prepare_for_counterexmp": 0.00000000000000E+00,
+    "gnatwhy3.save_session": 1.56250000000000E-01,
+    "gnatwhy3.transformations.eliminate_inductive": 6.25000000000000E-02,
+    "gnatwhy3.transformations.encoding_smt_if_poly": 0.00000000000000E+00,
+    "gnatwhy3.transformations.eliminate_unused_hypo": 3.90625000000000E-01,
+    "gnatwhy3.transformations.eliminate_builtin": 1.56250000000000E-01,
+    "gnatwhy3.transformations.discriminate_if_poly": 0.00000000000000E+00,
+    "gnatwhy3.transformations.introduce_premises": 1.56250000000000E-02,
+    "gnatwhy3.init": 6.10937500000000E+00
+  }
+}

@@ -1,0 +1,75 @@
+Summary of SPARK analysis
+=========================
+
+-------------------------------------------------------------------------------------------------------
+SPARK Analysis results        Total      Flow   CodePeer                 Provers   Justified   Unproved
+-------------------------------------------------------------------------------------------------------
+Data Dependencies                 .         .          .                       .           .          .
+Flow Dependencies                 .         .          .                       .           .          .
+Initialization                    .         .          .                       .           .          .
+Non-Aliasing                      .         .          .                       .           .          .
+Run-time Checks                  39         .          .               39 (CVC4)           .          .
+Assertions                        8         .          .                8 (CVC4)           .          .
+Functional Contracts             36         .          .    36 (CVC4 94%, Z3 6%)           .          .
+LSP Verification                  .         .          .                       .           .          .
+Termination                       .         .          .                       .           .          .
+Concurrency                       .         .          .                       .           .          .
+-------------------------------------------------------------------------------------------------------
+Total                            83         .          .               83 (100%)           .          .
+
+
+max steps used for successful proof: 597
+
+Analyzed 5 units
+in unit main, 0 subprograms and packages out of 1 analyzed
+  Main at main.adb:4 skipped
+in unit plane, 18 subprograms and packages out of 19 analyzed
+  plane at plane.ads:5 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  plane.ChangeAltitude at plane.ads:110 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (7 checks)
+  plane.ChangeSpeed at plane.ads:107 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (7 checks)
+  plane.CorrectAltitude at plane.ads:79 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  plane.CorrectSpeed at plane.ads:82 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  plane.EnoughFuel at plane.ads:61 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  plane.FillTank at plane.ads:57 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (4 checks)
+  plane.FlightMode at plane.ads:86 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (3 checks)
+  plane.GetReadyForTakeOff at plane.ads:53 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (5 checks)
+  plane.Invariant at plane.ads:45 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  plane.IsLanded at plane.ads:96 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  plane.IsReadyForTakeOff at plane.ads:65 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  plane.Landed at plane.ads:99 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (5 checks)
+  plane.Landing at plane.ads:92 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  plane.Put_Line at plane.adb:7 skipped
+  plane.TakeOff at plane.ads:73 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (3 checks)
+  plane.ToggleLandingGear at plane.ads:113 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  plane.Towed at plane.ads:103 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (3 checks)
+  plane.WarningLights at plane.ads:117 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+in unit plane_doors, 10 subprograms and packages out of 11 analyzed
+  plane_doors at plane_doors.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  plane_doors.CloseDoors at plane_doors.ads:21 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (5 checks)
+  plane_doors.DoorsClosed at plane_doors.ads:30 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  plane_doors.DoorsLocked at plane_doors.ads:48 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  plane_doors.DoorsOpened at plane_doors.ads:33 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  plane_doors.DoorsUnlocked at plane_doors.ads:51 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  plane_doors.GetDoors at plane_doors.ads:56 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (2 checks)
+  plane_doors.LockDoors at plane_doors.ads:39 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (5 checks)
+  plane_doors.OpenDoors at plane_doors.ads:25 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (5 checks)
+  plane_doors.Put_Line at plane_doors.adb:7 skipped
+  plane_doors.UnlockDoors at plane_doors.ads:43 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (5 checks)
+in unit plane_engines, 8 subprograms and packages out of 9 analyzed
+  plane_engines at plane_engines.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  plane_engines.Accelerate at plane_engines.ads:38 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (6 checks)
+  plane_engines.Decelerate at plane_engines.ads:41 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (6 checks)
+  plane_engines.EnginesOff at plane_engines.ads:35 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  plane_engines.EnginesOn at plane_engines.ads:32 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  plane_engines.GetEngines at plane_engines.ads:21 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  plane_engines.Put_Line at plane_engines.adb:7 skipped
+  plane_engines.TurnOffEngines at plane_engines.ads:28 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  plane_engines.TurnOnEngines at plane_engines.ads:24 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+in unit warning_lights, 6 subprograms and packages out of 7 analyzed
+  warning_lights at warning_lights.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  warning_lights.GetWarningLights at warning_lights.ads:20 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  warning_lights.LightOff at warning_lights.ads:32 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  warning_lights.LightOn at warning_lights.ads:29 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  warning_lights.Put_Line at warning_lights.adb:7 skipped
+  warning_lights.TurnOffWarningLight at warning_lights.ads:26 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (3 checks)
+  warning_lights.TurnOnWarningLight at warning_lights.ads:23 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (3 checks)

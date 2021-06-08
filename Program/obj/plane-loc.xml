@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project >
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>D:\Misc\Napier\Formal Approaches to Software Engineering\ADA\Coursework\plane.gpr</vfs_project>
+      <vfs_file>D:\Misc\Napier\Formal Approaches to Software Engineering\ADA\Coursework\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>D:\Misc\Napier\Formal Approaches to Software Engineering\ADA\Coursework\plane.gpr</vfs_project>
+      <vfs_file>D:\Misc\Napier\Formal Approaches to Software Engineering\ADA\Coursework\src\plane.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>D:\Misc\Napier\Formal Approaches to Software Engineering\ADA\Coursework\plane.gpr</vfs_project>
+      <vfs_file>D:\Misc\Napier\Formal Approaches to Software Engineering\ADA\Coursework\src\plane.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>D:\Misc\Napier\Formal Approaches to Software Engineering\ADA\Coursework\plane.gpr</vfs_project>
+      <vfs_file>D:\Misc\Napier\Formal Approaches to Software Engineering\ADA\Coursework\src\plane_doors.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>D:\Misc\Napier\Formal Approaches to Software Engineering\ADA\Coursework\plane.gpr</vfs_project>
+      <vfs_file>D:\Misc\Napier\Formal Approaches to Software Engineering\ADA\Coursework\src\plane_doors.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>D:\Misc\Napier\Formal Approaches to Software Engineering\ADA\Coursework\plane.gpr</vfs_project>
+      <vfs_file>D:\Misc\Napier\Formal Approaches to Software Engineering\ADA\Coursework\src\plane_engines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>D:\Misc\Napier\Formal Approaches to Software Engineering\ADA\Coursework\plane.gpr</vfs_project>
+      <vfs_file>D:\Misc\Napier\Formal Approaches to Software Engineering\ADA\Coursework\src\plane_engines.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>D:\Misc\Napier\Formal Approaches to Software Engineering\ADA\Coursework\plane.gpr</vfs_project>
+      <vfs_file>D:\Misc\Napier\Formal Approaches to Software Engineering\ADA\Coursework\src\warning_lights.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>D:\Misc\Napier\Formal Approaches to Software Engineering\ADA\Coursework\plane.gpr</vfs_project>
+      <vfs_file>D:\Misc\Napier\Formal Approaches to Software Engineering\ADA\Coursework\src\warning_lights.ads</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

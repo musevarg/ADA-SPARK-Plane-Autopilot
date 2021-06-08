@@ -1,0 +1,1603 @@
+{
+  "spark": [
+    {
+      "name": "plane_engines",
+      "sloc": [
+        {
+          "file": "plane_engines.ads",
+          "line": 1
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane_engines.GetEngines",
+      "sloc": [
+        {
+          "file": "plane_engines.ads",
+          "line": 21
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane_engines.EnginesOff",
+      "sloc": [
+        {
+          "file": "plane_engines.ads",
+          "line": 35
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane_engines.EnginesOn",
+      "sloc": [
+        {
+          "file": "plane_engines.ads",
+          "line": 32
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane_engines.TurnOnEngines",
+      "sloc": [
+        {
+          "file": "plane_engines.ads",
+          "line": 24
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane_engines.TurnOffEngines",
+      "sloc": [
+        {
+          "file": "plane_engines.ads",
+          "line": 28
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane_engines.Accelerate",
+      "sloc": [
+        {
+          "file": "plane_engines.ads",
+          "line": 38
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane_engines.Decelerate",
+      "sloc": [
+        {
+          "file": "plane_engines.ads",
+          "line": 41
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane_engines.Put_Line",
+      "sloc": [
+        {
+          "file": "plane_engines.adb",
+          "line": 7
+        }
+      ],
+      "spark": "spec"
+    }
+  ],
+  "flow": [
+  ],
+  "session_map": {
+    " 1": "D:\\Misc\\Napier\\Formal Approaches to Software Engineering\\ADA\\Coursework\\obj\\gnatprove\\plane_engines__getengines",
+    " 2": "D:\\Misc\\Napier\\Formal Approaches to Software Engineering\\ADA\\Coursework\\obj\\gnatprove\\plane_engines__turnonengines",
+    " 3": "D:\\Misc\\Napier\\Formal Approaches to Software Engineering\\ADA\\Coursework\\obj\\gnatprove\\plane_engines__turnoffengines",
+    " 4": "D:\\Misc\\Napier\\Formal Approaches to Software Engineering\\ADA\\Coursework\\obj\\gnatprove\\plane_engines__accelerate",
+    " 5": "D:\\Misc\\Napier\\Formal Approaches to Software Engineering\\ADA\\Coursework\\obj\\gnatprove\\plane_engines__decelerate"
+  },
+  "proof": [
+    {
+      "file": "plane_engines.adb",
+      "line": 23,
+      "col": 7,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane_engines.GetEngines",
+        "sloc": [
+          {
+            "file": "plane_engines.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 218,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_engines.adb",
+      "check_line": 23,
+      "check_col": 7,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.09999999403954E-01
+        }
+      }
+    },
+    {
+      "file": "plane_engines.ads",
+      "line": 26,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane_engines.TurnOnEngines",
+        "sloc": [
+          {
+            "file": "plane_engines.ads",
+            "line": 24
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 70,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 119,
+              "time": 1.40000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_engines.ads",
+      "check_line": 26,
+      "check_col": 14,
+      "session_dir": 2,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 1.40000000596046E-01
+        }
+      }
+    },
+    {
+      "file": "plane_engines.ads",
+      "line": 30,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane_engines.TurnOffEngines",
+        "sloc": [
+          {
+            "file": "plane_engines.ads",
+            "line": 28
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 74,
+              "time": 1.30000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 114,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_engines.ads",
+      "check_line": 30,
+      "check_col": 14,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 1.29999995231628E-01
+        }
+      }
+    },
+    {
+      "file": "plane_engines.adb",
+      "line": 53,
+      "col": 31,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane_engines.Accelerate",
+        "sloc": [
+          {
+            "file": "plane_engines.ads",
+            "line": 38
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 53,
+              "time": 9.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_engines.adb",
+      "check_line": 53,
+      "check_col": 31,
+      "session_dir": 4,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 9.00000035762787E-02
+        }
+      }
+    },
+    {
+      "file": "plane_engines.adb",
+      "line": 54,
+      "col": 31,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane_engines.Accelerate",
+        "sloc": [
+          {
+            "file": "plane_engines.ads",
+            "line": 38
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 59,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_engines.adb",
+      "check_line": 54,
+      "check_col": 31,
+      "session_dir": 4,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.09999999403954E-01
+        }
+      }
+    },
+    {
+      "file": "plane_engines.adb",
+      "line": 55,
+      "col": 39,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane_engines.Accelerate",
+        "sloc": [
+          {
+            "file": "plane_engines.ads",
+            "line": 38
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 110,
+              "time": 1.30000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_engines.adb",
+      "check_line": 55,
+      "check_col": 39,
+      "session_dir": 4,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.29999995231628E-01
+        }
+      }
+    },
+    {
+      "file": "plane_engines.adb",
+      "line": 55,
+      "col": 56,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane_engines.Accelerate",
+        "sloc": [
+          {
+            "file": "plane_engines.ads",
+            "line": 38
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 146,
+              "time": 1.60000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_engines.adb",
+      "check_line": 55,
+      "check_col": 56,
+      "session_dir": 4,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.59999996423721E-01
+        }
+      }
+    },
+    {
+      "file": "plane_engines.adb",
+      "line": 55,
+      "col": 82,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane_engines.Accelerate",
+        "sloc": [
+          {
+            "file": "plane_engines.ads",
+            "line": 38
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 535,
+              "time": 2.70000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_engines.adb",
+      "check_line": 55,
+      "check_col": 82,
+      "session_dir": 4,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.70000010728836E-01
+        }
+      }
+    },
+    {
+      "file": "plane_engines.ads",
+      "line": 39,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane_engines.Accelerate",
+        "sloc": [
+          {
+            "file": "plane_engines.ads",
+            "line": 38
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 338,
+              "time": 2.30000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_engines.ads",
+      "check_line": 39,
+      "check_col": 14,
+      "session_dir": 4,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.30000004172325E-01
+        }
+      }
+    },
+    {
+      "file": "plane_engines.adb",
+      "line": 64,
+      "col": 31,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane_engines.Decelerate",
+        "sloc": [
+          {
+            "file": "plane_engines.ads",
+            "line": 41
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 53,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_engines.adb",
+      "check_line": 64,
+      "check_col": 31,
+      "session_dir": 5,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.09999999403954E-01
+        }
+      }
+    },
+    {
+      "file": "plane_engines.adb",
+      "line": 65,
+      "col": 31,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane_engines.Decelerate",
+        "sloc": [
+          {
+            "file": "plane_engines.ads",
+            "line": 41
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 59,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_engines.adb",
+      "check_line": 65,
+      "check_col": 31,
+      "session_dir": 5,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.09999999403954E-01
+        }
+      }
+    },
+    {
+      "file": "plane_engines.adb",
+      "line": 66,
+      "col": 39,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane_engines.Decelerate",
+        "sloc": [
+          {
+            "file": "plane_engines.ads",
+            "line": 41
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 110,
+              "time": 1.30000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_engines.adb",
+      "check_line": 66,
+      "check_col": 39,
+      "session_dir": 5,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.29999995231628E-01
+        }
+      }
+    },
+    {
+      "file": "plane_engines.adb",
+      "line": 66,
+      "col": 56,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane_engines.Decelerate",
+        "sloc": [
+          {
+            "file": "plane_engines.ads",
+            "line": 41
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 146,
+              "time": 1.40000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_engines.adb",
+      "check_line": 66,
+      "check_col": 56,
+      "session_dir": 5,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.40000000596046E-01
+        }
+      }
+    },
+    {
+      "file": "plane_engines.adb",
+      "line": 66,
+      "col": 82,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane_engines.Decelerate",
+        "sloc": [
+          {
+            "file": "plane_engines.ads",
+            "line": 41
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 535,
+              "time": 2.70000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_engines.adb",
+      "check_line": 66,
+      "check_col": 82,
+      "session_dir": 5,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.70000010728836E-01
+        }
+      }
+    },
+    {
+      "file": "plane_engines.ads",
+      "line": 42,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane_engines.Decelerate",
+        "sloc": [
+          {
+            "file": "plane_engines.ads",
+            "line": 41
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 334,
+              "time": 2.00000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_engines.ads",
+      "check_line": 42,
+      "check_col": 14,
+      "session_dir": 5,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.00000002980232E-01
+        }
+      }
+    }
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.EnginesOff",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 35
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.EnginesOn",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_engines.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.EnginesOff",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 35
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.EnginesOn",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_engines.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "plane_engines.TurnOffEngines",
+          "sloc": [
+            {
+              "file": "plane_engines.ads",
+              "line": 28
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.EnginesOff",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 35
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.EnginesOn",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_engines.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane_engines.TurnOffEngines",
+          "sloc": [
+            {
+              "file": "plane_engines.ads",
+              "line": 28
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.EnginesOff",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 35
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.EnginesOn",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_engines.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.EnginesOff",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 35
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.EnginesOn",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_engines.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane_engines.TurnOffEngines",
+          "sloc": [
+            {
+              "file": "plane_engines.ads",
+              "line": 28
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_engines.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_engines.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "plane_engines.Accelerate",
+          "sloc": [
+            {
+              "file": "plane_engines.ads",
+              "line": 38
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.EnginesOff",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 35
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.EnginesOn",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_engines.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.EnginesOff",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 35
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.EnginesOn",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_engines.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "plane_engines.TurnOnEngines",
+          "sloc": [
+            {
+              "file": "plane_engines.ads",
+              "line": 24
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_engines.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane_engines.Accelerate",
+          "sloc": [
+            {
+              "file": "plane_engines.ads",
+              "line": 38
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_engines.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_engines.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane_engines.Accelerate",
+          "sloc": [
+            {
+              "file": "plane_engines.ads",
+              "line": 38
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.EnginesOff",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 35
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.EnginesOn",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_engines.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane_engines.TurnOnEngines",
+          "sloc": [
+            {
+              "file": "plane_engines.ads",
+              "line": 24
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.EnginesOff",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 35
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.EnginesOn",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_engines.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.EnginesOff",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 35
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.EnginesOn",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_engines.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane_engines.TurnOnEngines",
+          "sloc": [
+            {
+              "file": "plane_engines.ads",
+              "line": 24
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_engines.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_engines.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "plane_engines.Decelerate",
+          "sloc": [
+            {
+              "file": "plane_engines.ads",
+              "line": 41
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_engines.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane_engines.Decelerate",
+          "sloc": [
+            {
+              "file": "plane_engines.ads",
+              "line": 41
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_engines.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_engines.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane_engines.Decelerate",
+          "sloc": [
+            {
+              "file": "plane_engines.ads",
+              "line": 41
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane_engines.EnginesOff",
+          "sloc": [
+            {
+              "file": "plane_engines.ads",
+              "line": 35
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane_engines.EnginesOff",
+          "sloc": [
+            {
+              "file": "plane_engines.ads",
+              "line": 35
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.TurnOffEngines",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 28
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane_engines.GetEngines",
+          "sloc": [
+            {
+              "file": "plane_engines.ads",
+              "line": 21
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane_engines.TurnOffEngines",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 28
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_engines.TurnOffEngines",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 28
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_engines.TurnOffEngines",
+            "sloc": [
+              {
+                "file": "plane_engines.ads",
+                "line": 28
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane_engines.GetEngines",
+          "sloc": [
+            {
+              "file": "plane_engines.ads",
+              "line": 21
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane_engines.EnginesOn",
+          "sloc": [
+            {
+              "file": "plane_engines.ads",
+              "line": 32
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane_engines.EnginesOn",
+          "sloc": [
+            {
+              "file": "plane_engines.ads",
+              "line": 32
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane_engines",
+          "sloc": [
+            {
+              "file": "plane_engines.ads",
+              "line": 1
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "gnatwhy3.transformations.inline_trivial": 7.81250000000000E-02,
+    "codepeer results": 8.26000032247975E-05,
+    "init_why_sections": 1.05059996712953E-03,
+    "gnatwhy3.transformations.detect_polymorphism": 0.00000000000000E+00,
+    "globals/properties (advanced)": 3.47304008901119E-02,
+    "gnatwhy3.transformations.eliminate_literal": 3.12500000000000E-02,
+    "gnatwhy3.run_vcs": 2.95312500000000E+00,
+    "gnatwhy3.transformations.eliminate_algebraic_if_poly": 1.56250000000000E-02,
+    "gnatwhy3.transformations.eliminate_definition_if_poly": 1.56250000000000E-02,
+    "flow analysis": 8.83090030401945E-03,
+    "gnatwhy3.transformations.simplify_formula": 1.56250000000000E-02,
+    "marking": 1.24645000323653E-02,
+    "translation of standard": 9.36419982463121E-03,
+    "gnatwhy3.register_vcs": 9.37500000000000E-02,
+    "gnatwhy3.transformations.eliminate_epsilon": 0.00000000000000E+00,
+    "globals (basic)": 2.34069004654884E-02,
+    "gnatwhy3.schedule_vcs": 1.56250000000000E-02,
+    "gnatwhy3.transformations.prepare_for_counterexmp": 0.00000000000000E+00,
+    "gnatwhy3.save_session": 3.12500000000000E-02,
+    "gnatwhy3.transformations.eliminate_inductive": 0.00000000000000E+00,
+    "gnatwhy3.transformations.encoding_smt_if_poly": 0.00000000000000E+00,
+    "gnatwhy3.transformations.eliminate_unused_hypo": 9.37500000000000E-02,
+    "gnatwhy3.transformations.eliminate_builtin": 4.68750000000000E-02,
+    "gnatwhy3.transformations.discriminate_if_poly": 0.00000000000000E+00,
+    "gnatwhy3.init": 2.06250000000000E+00
+  }
+}

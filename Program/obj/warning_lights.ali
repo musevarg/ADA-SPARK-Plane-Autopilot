@@ -1,0 +1,112 @@
+V "GNAT Lib v2020"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_DISPATCHING_CALLS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+
+U warning_lights%b	warning_lights.adb	bc98a266 OO PK IL
+W ada%s			ada.ads			ada.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.img_enum_new%s	s-imenne.adb		s-imenne.ali
+
+U warning_lights%s	warning_lights.ads	234b4fbf EE OO PF PK IL
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system%s		system.ads		system.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+
+D ada.ads		20200819050644 76789da1 ada%s
+D a-except.ads		20200819050644 a7106115 ada.exceptions%s
+D a-ioexce.ads		20200819050644 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200819050644 119b8fb3 ada.streams%s
+D a-tags.ads		20200819050644 edddc8f0 ada.tags%s
+D a-textio.ads		20200819050644 aef4d56d ada.text_io%s
+D a-unccon.ads		20200819050644 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200819050646 5ab55268 interfaces%s
+D i-cstrea.ads		20200819050646 e53d8b8e interfaces.c_streams%s
+D system.ads		20200819050648 32a08138 system%s
+D s-conca3.ads		20200819050646 0b705ca5 system.concat_3%s
+D s-crtl.ads		20200819050646 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200819050646 54135002 system.exception_table%s
+D s-ficobl.ads		20200819050646 078245e4 system.file_control_block%s
+D s-imenne.ads		20200819050646 614c06c0 system.img_enum_new%s
+D s-parame.ads		20200819050648 4752c4cb system.parameters%s
+D s-secsta.ads		20200819050648 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200819050648 a7318a92 system.soft_links%s
+D s-stache.ads		20200819050648 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200819050648 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200819050648 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20200819050648 ed88f8fb system.storage_elements%b
+D s-stratt.ads		20200819050648 9a2744e9 system.stream_attributes%s
+D s-traent.ads		20200819050648 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200819050648 5ecf7212 system.unsigned_types%s
+D s-wchcon.ads		20200819050648 1b7d22d2 system.wch_con%s
+D warning_lights.ads	20210504143408 234b4fbf warning_lights%s
+D warning_lights.adb	20210429165646 312738b4 warning_lights%b
+G a e
+G c Z s b [getwarninglights warning_lights 20 13 none]
+G c Z s b [turnonwarninglight warning_lights 23 14 none]
+G c Z s b [turnoffwarninglight warning_lights 26 14 none]
+G c Z s s [lighton warning_lights 29 13 none]
+G c Z s s [lightoff warning_lights 32 13 none]
+G c Z s s [warninglightDA warning_lights 10 9 none]
+G c Z s s [warninglightDF warning_lights 10 9 none]
+G c Z s s [warninglightIP warning_lights 10 9 none]
+G c Z s s [TwarninglightsBIP warning_lights 17 4 none]
+G c Z b b [put_line warning_lights 7 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 28|1r6 13r7
+X 6 a-textio.ads
+57K13*Text_IO 727e16 28|1w10 13r11
+508U14*Put_Line 28|13s19
+X 27 warning_lights.ads
+1K9*warning_lights 35l5 35e19 28|3b14 54l5 54t19
+4E9*LightStatus 4e33 12r16
+4n25*On{4E9} 30r19 28|39r23 47r22
+4n29*Off{4E9} 33r20 28|20r26 21r25 22r26 23r27 24r28 25r25 26r26 38r22 48r23
+7E9*LightName 7e93 11r14
+7n23*Low_Fuel{7E9} 28|20r16
+7n33*Low_Alt{7E9} 28|21r16
+7n42*High_Alt{7E9} 28|22r16
+7n52*Low_Speed{7E9} 28|23r16
+7n63*High_Speed{7E9} 28|24r16
+7n75*Low_Rpm{7E9} 28|25r16
+7n84*High_Rpm{7E9} 28|26r16
+10R9*WarningLight 13e14 17r55 23p14 23r45 26p14 26r46 29p13 29r29 32p13 32r30
+. 28|35r45 44r46
+11e7*name{7E9} 28|40r22 49r22
+12e7*status{4E9} 30r10 33r11 28|38r13 39m13 40r59 47r13 48m13 49r59
+16I9*WarningLights_Idx<short_short_integer> 17r33
+17A9*WarningLights(10R9)<16I9> 20r37 28|18r37 19r12
+20V13*GetWarningLights{17A9} 28|18b13 32l8 32t24
+23U14*TurnOnWarningLight 23=33 28|35b14 42l8 42t26
+23r33 wl{10R9} 24r22 28|35b33 38r10 39m10 40r19 40r56
+26U14*TurnOffWarningLight 26=34 28|44b14 51l8 51t27
+26r34 wl{10R9} 27r23 28|44b34 47r10 48m10 49r19 49r56
+29V13*LightOn{boolean} 24s14 29>21
+29r21 wl{10R9} 30r7
+32V13*LightOff{boolean} 27s14 32>22
+32r22 wl{10R9} 33r8
+X 28 warning_lights.adb
+7U14 Put_Line 7>24 9b14 14l8 14t16 40s10 49s10
+7a24 Item{string} 9b24 13r29
+19a7 wl{27|17A9} 31r14
+

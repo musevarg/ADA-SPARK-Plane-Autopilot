@@ -1,0 +1,141 @@
+V "GNAT Lib v2020"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DISPATCHING_CALLS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+
+U plane_doors%b		plane_doors.adb		031ae20c NE OO PK IL
+W ada%s			ada.ads			ada.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z interfaces%s		interfac.ads		interfac.ali
+
+U plane_doors%s		plane_doors.ads		177830e8 EE OO PF PK IL
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system%s		system.ads		system.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+
+D ada.ads		20200819050644 76789da1 ada%s
+D a-except.ads		20200819050644 a7106115 ada.exceptions%s
+D a-ioexce.ads		20200819050644 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200819050644 119b8fb3 ada.streams%s
+D a-tags.ads		20200819050644 edddc8f0 ada.tags%s
+D a-textio.ads		20200819050644 aef4d56d ada.text_io%s
+D a-unccon.ads		20200819050644 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200819050646 5ab55268 interfaces%s
+D i-cstrea.ads		20200819050646 e53d8b8e interfaces.c_streams%s
+D plane_doors.ads	20210503151150 177830e8 plane_doors%s
+D plane_doors.adb	20210504142548 ba960789 plane_doors%b
+D system.ads		20200819050648 32a08138 system%s
+D s-crtl.ads		20200819050646 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200819050646 54135002 system.exception_table%s
+D s-ficobl.ads		20200819050646 078245e4 system.file_control_block%s
+D s-parame.ads		20200819050648 4752c4cb system.parameters%s
+D s-secsta.ads		20200819050648 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200819050648 a7318a92 system.soft_links%s
+D s-stache.ads		20200819050648 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200819050648 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200819050648 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20200819050648 ed88f8fb system.storage_elements%b
+D s-stratt.ads		20200819050648 9a2744e9 system.stream_attributes%s
+D s-traent.ads		20200819050648 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200819050648 5ecf7212 system.unsigned_types%s
+D s-wchcon.ads		20200819050648 1b7d22d2 system.wch_con%s
+G a e
+G c Z s b [closedoors plane_doors 21 14 none]
+G c Z s b [opendoors plane_doors 25 14 none]
+G c Z s s [doorsclosed plane_doors 30 13 none]
+G c Z s s [doorsopened plane_doors 33 13 none]
+G c Z s b [lockdoors plane_doors 39 14 none]
+G c Z s b [unlockdoors plane_doors 43 14 none]
+G c Z s s [doorslocked plane_doors 48 13 none]
+G c Z s s [doorsunlocked plane_doors 51 13 none]
+G c Z s b [getdoors plane_doors 56 13 none]
+G c Z s s [doorDA plane_doors 8 9 none]
+G c Z s s [doorDF plane_doors 8 9 none]
+G c Z s s [doorIP plane_doors 8 9 none]
+G c Z s s [TdoorsBIP plane_doors 16 4 none]
+G c Z b b [put_line plane_doors 7 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 11|1r6 13r7
+X 6 a-textio.ads
+57K13*Text_IO 727e16 11|1w10 13r11
+508U14*Put_Line 11|13s19
+X 10 plane_doors.ads
+1K9*plane_doors 58l5 58e16 11|3b14 93l5 93t16
+4E9*OpenStatus 4e37 9r16
+4n24*Open{4E9} 22r53 27r53 34r46 11|38r27 41r56 43r27
+4n30*Closed{4E9} 23r53 26r53 31r45 11|23r27 26r56 28r27 80r16 81r16 82r16
+5E9*LockStatus 5e41 10r14
+5n24*Unlocked{5E9} 40r51 45r51 52r43 11|68r25 71r54 73r25
+5n34*Locked{5E9} 41r51 44r51 49r43 11|53r25 56r54 58r25 80r24 81r24 82r24
+8R9*Door 11e14 16r39
+9e7*status{4E9} 22r44 23r44 26r44 27r44 31r36 34r37 11|23m17 26r47 28m17
+. 38m17 41r47 43m17
+10e7*lock{5E9} 40r44 41r44 44r44 45r44 49r36 52r36 11|53m17 56r47 58m17 68m17
+. 71r47 73m17
+15I9*Doors_Idx<short_short_integer> 16r25 11|20r13 35r13 50r13 65r13
+16A9*Doors(8R9)<15I9> 21r36 25r35 30r32 33r32 39r35 43r37 48r32 51r34 56r29
+. 11|18r36 33r35 48r35 63r37 78r29 79r24
+21U14*CloseDoors 21=25 11|18b14 30l8 30t18
+21a25 d{16A9} 22r28 22r39 23r28 23r39 11|18b25 20r26 22r19 23m10 26r42 28m7
+. 28r9
+22i23 Z<short_short_integer> 22r41
+23i23 Z<short_short_integer> 23r41
+25U14*OpenDoors 25=24 11|33b14 45l8 45t17 88s10
+25a24 d{16A9} 26r28 26r39 26r79 27r28 27r39 11|33b24 35r26 37r19 38m10 41r42
+. 43m7 43r9
+26i23 Z<short_short_integer> 26r41
+27i23 Z<short_short_integer> 27r41
+30V13*DoorsClosed{boolean} 30>25 40s65 44s63 11|87s10
+30a25 d{16A9} 31r20 31r31
+31i15 Z<short_short_integer> 31r33
+33V13*DoorsOpened{boolean} 33>25
+33a25 d{16A9} 34r21 34r32
+34i16 Z<short_short_integer> 34r34
+39U14*LockDoors 39=24 11|48b14 60l8 60t17
+39a24 d{16A9} 40r28 40r39 40r77 41r28 41r39 11|48b24 50r26 52r19 53m10 56r42
+. 58m7 58r9
+40i23 Z<short_short_integer> 40r41
+41i23 Z<short_short_integer> 41r41
+43U14*UnlockDoors 43=26 11|63b14 75l8 75t19 85s10
+43a26 d{16A9} 44r28 44r39 44r75 45r28 45r39 11|63b26 65r26 67r19 68m10 71r42
+. 73m7 73r9
+44i23 Z<short_short_integer> 44r41
+45i23 Z<short_short_integer> 45r41
+48V13*DoorsLocked{boolean} 48>25 11|84s10
+48a25 d{16A9} 49r20 49r31
+49i15 Z<short_short_integer> 49r33
+51V13*DoorsUnlocked{boolean} 26s65 51>27
+51a27 d{16A9} 52r20 52r31
+52i15 Z<short_short_integer> 52r33
+56V13*GetDoors{16A9} 11|78b13 91l8 91t16
+X 11 plane_doors.adb
+7U14 Put_Line 7>24 9b14 14l8 14t16 29s7 44s7 59s7 74s7
+7a24 Item{string} 9b24 13r29
+20i7 Pos{10|15I9} 22r13 23r12 24m10 24r17 26r32
+26i23 Z<short_short_integer> 26r44
+35i7 Pos{10|15I9} 37r13 38r12 39m10 39r17 41r32
+41i23 Z<short_short_integer> 41r44
+50i7 Pos{10|15I9} 52r13 53r12 54m10 54r17 56r32
+56i23 Z<short_short_integer> 56r44
+65i7 Pos{10|15I9} 67r13 68r12 69m10 69r17 71r32
+71i23 Z<short_short_integer> 71r44
+79a7 doors_statuses{10|16A9} 84r22 85m22 85r22 87r22 88m20 88r20 90r14
+

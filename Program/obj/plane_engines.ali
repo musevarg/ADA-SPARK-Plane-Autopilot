@@ -1,0 +1,120 @@
+V "GNAT Lib v2020"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DISPATCHING_CALLS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+
+U plane_engines%b	plane_engines.adb	53aa41ed NE OO PK IL
+W ada%s			ada.ads			ada.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.concat_4%s	s-conca4.adb		s-conca4.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+
+U plane_engines%s	plane_engines.ads	e11f7c53 EE OO PF PK IL
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system%s		system.ads		system.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+
+D ada.ads		20200819050644 76789da1 ada%s
+D a-except.ads		20200819050644 a7106115 ada.exceptions%s
+D a-ioexce.ads		20200819050644 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200819050644 119b8fb3 ada.streams%s
+D a-tags.ads		20200819050644 edddc8f0 ada.tags%s
+D a-textio.ads		20200819050644 aef4d56d ada.text_io%s
+D a-unccon.ads		20200819050644 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200819050646 5ab55268 interfaces%s
+D i-cstrea.ads		20200819050646 e53d8b8e interfaces.c_streams%s
+D plane_engines.ads	20210504154936 e11f7c53 plane_engines%s
+D plane_engines.adb	20210430021224 1c41e8d3 plane_engines%b
+D system.ads		20200819050648 32a08138 system%s
+D s-conca4.ads		20200819050646 7e642b20 system.concat_4%s
+D s-crtl.ads		20200819050646 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200819050646 54135002 system.exception_table%s
+D s-ficobl.ads		20200819050646 078245e4 system.file_control_block%s
+D s-imgint.ads		20200819050646 02dbe0c2 system.img_int%s
+D s-parame.ads		20200819050648 4752c4cb system.parameters%s
+D s-secsta.ads		20200819050648 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200819050648 a7318a92 system.soft_links%s
+D s-stache.ads		20200819050648 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200819050648 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200819050648 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20200819050648 ed88f8fb system.storage_elements%b
+D s-stratt.ads		20200819050648 9a2744e9 system.stream_attributes%s
+D s-traent.ads		20200819050648 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200819050648 5ecf7212 system.unsigned_types%s
+D s-wchcon.ads		20200819050648 1b7d22d2 system.wch_con%s
+G a e
+G c Z s b [getengines plane_engines 21 13 none]
+G c Z s b [turnonengines plane_engines 24 14 none]
+G c Z s b [turnoffengines plane_engines 28 14 none]
+G c Z s s [engineson plane_engines 32 13 none]
+G c Z s s [enginesoff plane_engines 35 13 none]
+G c Z s b [accelerate plane_engines 38 14 none]
+G c Z s b [decelerate plane_engines 41 14 none]
+G c Z s s [engineDA plane_engines 11 9 none]
+G c Z s s [engineDF plane_engines 11 9 none]
+G c Z s s [engineIP plane_engines 11 9 none]
+G c Z s s [TenginesBIP plane_engines 18 4 none]
+G c Z b b [put_line plane_engines 7 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 11|1r6 13r7
+X 6 a-textio.ads
+57K13*Text_IO 727e16 11|1w10 13r11
+508U14*Put_Line 11|13s19
+X 10 plane_engines.ads
+1K9*plane_engines 44l5 44e18 11|3b14 71l5 71t18
+4E9*EngineStatus 4e34 12r16
+4n26*On{4E9} 33r45 11|20r16 21r16 31r22 33r22
+4n30*Off{4E9} 36r45 11|41r22 43r22
+8I9*RevolutionsPerMinute<short_integer> 13r13 39r51 42r51
+11R9*Engine 14e14 18r43
+12e7*status{4E9} 33r36 36r36 11|31m12 33m12 41m12 43m12
+13i7*rpm{8I9} 26r61 30r62 39r44 42r44 11|32m12 34m12 42m12 44m12 52r15 52r35
+. 53m15 53r27 54m15 54r27 55r46 55r89 63r15 63r35 64m15 64r27 65m15 65r27
+. 66r46 66r89
+17I9*Engines_Idx<short_short_integer> 18r27
+18A9*Engines(11R9)<17I9> 21r31 24r39 28r40 32r30 35r31 38r36 41r36 11|18r31
+. 19r25 28r39 38r40 49r36 60r36
+21V13*GetEngines{18A9} 11|18b13 25l8 25t18
+24U14*TurnOnEngines 24=28 11|28b14 36l8 36t21
+24a28 e{18A9} 25r24 26r24 26r45 26r56 11|28b28 31m7 32m7 33m7 34m7
+26i40 Z<short_short_integer> 26r58
+28U14*TurnOffEngines 28=29 11|23s7 38b14 46l8 46t22
+28a29 e{18A9} 29r23 30r25 30r46 30r57 11|38b29 41m7 42m7 43m7 44m7
+30i41 Z<short_short_integer> 30r59
+32V13*EnginesOn{boolean} 26s14 29s13 32>23
+32a23 e{18A9} 33r20 33r31
+33i15 Z<short_short_integer> 33r33
+35V13*EnginesOff{boolean} 25s13 30s14 35>24
+35a24 e{18A9} 36r20 36r31
+36i15 Z<short_short_integer> 36r33
+38U14*Accelerate 38=25 11|49b14 57l8 57t18
+38a25 e{18A9} 39r28 39r39 11|49b25 52r10 52r30 53m10 53r22 54m10 54r22 55r41
+. 55r84
+39i23 Z<short_short_integer> 39r41
+41U14*Decelerate 41=25 11|60b14 68l8 68t18
+41a25 e{18A9} 42r28 42r39 11|60b25 63r10 63r30 64m10 64r22 65m10 65r22 66r41
+. 66r84
+42i23 Z<short_short_integer> 42r41
+X 11 plane_engines.adb
+7U14 Put_Line 7>24 9b14 14l8 14t16 35s7 45s7 55s10 66s10
+7a24 Item{string} 9b24 13r29
+19a7 engine_statuses{10|18A9} 23m22 23r22 24r14
+

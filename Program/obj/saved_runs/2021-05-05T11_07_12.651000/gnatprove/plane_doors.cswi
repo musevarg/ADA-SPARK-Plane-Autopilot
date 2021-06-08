@@ -1,0 +1,7 @@
+20210505100712
+-c
+-x
+ada
+-gnatA
+-gnatc
+-gnates=D:\Misc\Napier\Formal Approaches to Software Engineering\ADA\Coursework\obj\gnatprove\41062961.tmp

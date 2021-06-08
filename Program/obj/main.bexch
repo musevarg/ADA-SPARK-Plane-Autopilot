@@ -1,0 +1,23 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+D:\Misc\Napier\Formal Approaches to Software Engineering\ADA\Coursework\plane.gpr
+20210427153712 8b586fbc7851964823168b491ce6044c
+[BOUND OBJECT FILES]
+D:\Misc\Napier\Formal Approaches to Software Engineering\ADA\Coursework\obj\plane_doors.o
+D:\Misc\Napier\Formal Approaches to Software Engineering\ADA\Coursework\obj\plane_engines.o
+D:\Misc\Napier\Formal Approaches to Software Engineering\ADA\Coursework\obj\warning_lights.o
+D:\Misc\Napier\Formal Approaches to Software Engineering\ADA\Coursework\obj\plane.o
+D:\Misc\Napier\Formal Approaches to Software Engineering\ADA\Coursework\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LD:\Misc\Napier\Formal Approaches to Software Engineering\ADA\Coursework\obj\
+-LD:\Misc\Napier\Formal Approaches to Software Engineering\ADA\Coursework\obj\
+-LD:/programs/gnat/lib/gcc/x86_64-pc-mingw32/9.3.1/adalib/
+-static
+-static-libgcc
+D:/programs/gnat/lib/gcc/x86_64-pc-mingw32/9.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

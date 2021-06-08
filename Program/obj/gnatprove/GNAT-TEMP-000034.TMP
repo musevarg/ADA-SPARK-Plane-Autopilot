@@ -1,0 +1,7 @@
+{"session_dir" : "D:\\Misc\\Napier\\Formal Approaches to Software Engineering\\ADA\\Coursework\\obj\\gnatprove\\plane__warninglights" , "results" : [{"id" : 39 , "reason" : "VC_POSTCONDITION" , "result" : true , "extra_info" : 0 , "check_tree" : [{"proof_attempts" : {"CVC4" : {"result" : "Timeout" ,
+"steps" : -1 , "time" : 0 } , "Z3" : {"result" : "Valid" , "steps" : 77977 ,
+"time" : 0 } } ,
+"transformations" : {} }] , "stats" : {"Z3" : { "count" : 1 , "max_steps" : 1 , "max_time" : 0.000000  } } }] , "timings" : {"gnatwhy3.run_vcs" : 0.000000 ,
+"gnatwhy3.register_vcs" : 0.000000 , "gnatwhy3.schedule_vcs" : 0.000000 ,
+"gnatwhy3.init" : 0.531250 ,
+"gnatwhy3.save_session" : 0.015625 } }

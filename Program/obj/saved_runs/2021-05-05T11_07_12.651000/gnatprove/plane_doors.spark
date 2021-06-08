@@ -1,0 +1,2210 @@
+{
+  "spark": [
+    {
+      "name": "plane_doors",
+      "sloc": [
+        {
+          "file": "plane_doors.ads",
+          "line": 1
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane_doors.CloseDoors",
+      "sloc": [
+        {
+          "file": "plane_doors.ads",
+          "line": 21
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane_doors.DoorsUnlocked",
+      "sloc": [
+        {
+          "file": "plane_doors.ads",
+          "line": 51
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane_doors.OpenDoors",
+      "sloc": [
+        {
+          "file": "plane_doors.ads",
+          "line": 25
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane_doors.DoorsClosed",
+      "sloc": [
+        {
+          "file": "plane_doors.ads",
+          "line": 30
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane_doors.DoorsOpened",
+      "sloc": [
+        {
+          "file": "plane_doors.ads",
+          "line": 33
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane_doors.LockDoors",
+      "sloc": [
+        {
+          "file": "plane_doors.ads",
+          "line": 39
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane_doors.UnlockDoors",
+      "sloc": [
+        {
+          "file": "plane_doors.ads",
+          "line": 43
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane_doors.DoorsLocked",
+      "sloc": [
+        {
+          "file": "plane_doors.ads",
+          "line": 48
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane_doors.GetDoors",
+      "sloc": [
+        {
+          "file": "plane_doors.ads",
+          "line": 56
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "plane_doors.Put_Line",
+      "sloc": [
+        {
+          "file": "plane_doors.adb",
+          "line": 7
+        }
+      ],
+      "spark": "spec"
+    }
+  ],
+  "flow": [
+  ],
+  "session_map": {
+    " 1": "D:\\Misc\\Napier\\Formal Approaches to Software Engineering\\ADA\\Coursework\\obj\\gnatprove\\plane_doors__getdoors",
+    " 2": "D:\\Misc\\Napier\\Formal Approaches to Software Engineering\\ADA\\Coursework\\obj\\gnatprove\\plane_doors__closedoors",
+    " 3": "D:\\Misc\\Napier\\Formal Approaches to Software Engineering\\ADA\\Coursework\\obj\\gnatprove\\plane_doors__opendoors",
+    " 4": "D:\\Misc\\Napier\\Formal Approaches to Software Engineering\\ADA\\Coursework\\obj\\gnatprove\\plane_doors__lockdoors",
+    " 5": "D:\\Misc\\Napier\\Formal Approaches to Software Engineering\\ADA\\Coursework\\obj\\gnatprove\\plane_doors__unlockdoors"
+  },
+  "proof": [
+    {
+      "file": "plane_doors.adb",
+      "line": 85,
+      "col": 10,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane_doors.GetDoors",
+        "sloc": [
+          {
+            "file": "plane_doors.ads",
+            "line": 56
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 320,
+              "time": 9.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 183,
+              "time": 8.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_doors.adb",
+      "check_line": 85,
+      "check_col": 10,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 9.00000035762787E-02
+        }
+      }
+    },
+    {
+      "file": "plane_doors.adb",
+      "line": 88,
+      "col": 10,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane_doors.GetDoors",
+        "sloc": [
+          {
+            "file": "plane_doors.ads",
+            "line": 56
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 456,
+              "time": 1.30000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 538,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_doors.adb",
+      "check_line": 88,
+      "check_col": 10,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 1.29999995231628E-01
+        }
+      }
+    },
+    {
+      "file": "plane_doors.adb",
+      "line": 24,
+      "col": 21,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane_doors.CloseDoors",
+        "sloc": [
+          {
+            "file": "plane_doors.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 1.30000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 9.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_doors.adb",
+      "check_line": 24,
+      "check_col": 21,
+      "session_dir": 2,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 1.29999995231628E-01
+        }
+      }
+    },
+    {
+      "file": "plane_doors.adb",
+      "line": 26,
+      "col": 44,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane_doors.CloseDoors",
+        "sloc": [
+          {
+            "file": "plane_doors.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 8.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 8.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 6.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_doors.adb",
+      "check_line": 26,
+      "check_col": 44,
+      "session_dir": 2,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 4,
+          "max_steps": 1,
+          "max_time": 7.99999982118607E-02
+        }
+      }
+    },
+    {
+      "file": "plane_doors.adb",
+      "line": 26,
+      "col": 15,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
+      "severity": "info",
+      "entity": {
+        "name": "plane_doors.CloseDoors",
+        "sloc": [
+          {
+            "file": "plane_doors.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 107,
+              "time": 1.60000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_doors.adb",
+      "check_line": 26,
+      "check_col": 15,
+      "session_dir": 2,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.59999996423721E-01
+        }
+      }
+    },
+    {
+      "file": "plane_doors.adb",
+      "line": 26,
+      "col": 15,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "info",
+      "entity": {
+        "name": "plane_doors.CloseDoors",
+        "sloc": [
+          {
+            "file": "plane_doors.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 33,
+              "time": 8.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_doors.adb",
+      "check_line": 26,
+      "check_col": 15,
+      "session_dir": 2,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 7.99999982118607E-02
+        }
+      }
+    },
+    {
+      "file": "plane_doors.ads",
+      "line": 23,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane_doors.CloseDoors",
+        "sloc": [
+          {
+            "file": "plane_doors.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 119,
+              "time": 9.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_doors.ads",
+      "check_line": 23,
+      "check_col": 14,
+      "session_dir": 2,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 9.00000035762787E-02
+        }
+      }
+    },
+    {
+      "file": "plane_doors.adb",
+      "line": 39,
+      "col": 21,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane_doors.OpenDoors",
+        "sloc": [
+          {
+            "file": "plane_doors.ads",
+            "line": 25
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 8.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 6.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_doors.adb",
+      "check_line": 39,
+      "check_col": 21,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 7.99999982118607E-02
+        }
+      }
+    },
+    {
+      "file": "plane_doors.adb",
+      "line": 41,
+      "col": 44,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane_doors.OpenDoors",
+        "sloc": [
+          {
+            "file": "plane_doors.ads",
+            "line": 25
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 9.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 6.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 8.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_doors.adb",
+      "check_line": 41,
+      "check_col": 44,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 4,
+          "max_steps": 1,
+          "max_time": 9.00000035762787E-02
+        }
+      }
+    },
+    {
+      "file": "plane_doors.adb",
+      "line": 41,
+      "col": 15,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "info",
+      "entity": {
+        "name": "plane_doors.OpenDoors",
+        "sloc": [
+          {
+            "file": "plane_doors.ads",
+            "line": 25
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 38,
+              "time": 9.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_doors.adb",
+      "check_line": 41,
+      "check_col": 15,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 9.00000035762787E-02
+        }
+      }
+    },
+    {
+      "file": "plane_doors.adb",
+      "line": 41,
+      "col": 15,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
+      "severity": "info",
+      "entity": {
+        "name": "plane_doors.OpenDoors",
+        "sloc": [
+          {
+            "file": "plane_doors.ads",
+            "line": 25
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 129,
+              "time": 1.40000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_doors.adb",
+      "check_line": 41,
+      "check_col": 15,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.40000000596046E-01
+        }
+      }
+    },
+    {
+      "file": "plane_doors.ads",
+      "line": 27,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane_doors.OpenDoors",
+        "sloc": [
+          {
+            "file": "plane_doors.ads",
+            "line": 25
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 142,
+              "time": 1.30000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_doors.ads",
+      "check_line": 27,
+      "check_col": 14,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.29999995231628E-01
+        }
+      }
+    },
+    {
+      "file": "plane_doors.adb",
+      "line": 54,
+      "col": 21,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane_doors.LockDoors",
+        "sloc": [
+          {
+            "file": "plane_doors.ads",
+            "line": 39
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 8.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_doors.adb",
+      "check_line": 54,
+      "check_col": 21,
+      "session_dir": 4,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 7.99999982118607E-02
+        }
+      }
+    },
+    {
+      "file": "plane_doors.adb",
+      "line": 56,
+      "col": 44,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane_doors.LockDoors",
+        "sloc": [
+          {
+            "file": "plane_doors.ads",
+            "line": 39
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 8.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 8.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 8.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 6.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_doors.adb",
+      "check_line": 56,
+      "check_col": 44,
+      "session_dir": 4,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 4,
+          "max_steps": 1,
+          "max_time": 7.99999982118607E-02
+        }
+      }
+    },
+    {
+      "file": "plane_doors.adb",
+      "line": 56,
+      "col": 15,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "info",
+      "entity": {
+        "name": "plane_doors.LockDoors",
+        "sloc": [
+          {
+            "file": "plane_doors.ads",
+            "line": 39
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 33,
+              "time": 9.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_doors.adb",
+      "check_line": 56,
+      "check_col": 15,
+      "session_dir": 4,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 9.00000035762787E-02
+        }
+      }
+    },
+    {
+      "file": "plane_doors.adb",
+      "line": 56,
+      "col": 15,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
+      "severity": "info",
+      "entity": {
+        "name": "plane_doors.LockDoors",
+        "sloc": [
+          {
+            "file": "plane_doors.ads",
+            "line": 39
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 109,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_doors.adb",
+      "check_line": 56,
+      "check_col": 15,
+      "session_dir": 4,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.09999999403954E-01
+        }
+      }
+    },
+    {
+      "file": "plane_doors.ads",
+      "line": 41,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane_doors.LockDoors",
+        "sloc": [
+          {
+            "file": "plane_doors.ads",
+            "line": 39
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 121,
+              "time": 1.30000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_doors.ads",
+      "check_line": 41,
+      "check_col": 14,
+      "session_dir": 4,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.29999995231628E-01
+        }
+      }
+    },
+    {
+      "file": "plane_doors.adb",
+      "line": 69,
+      "col": 21,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane_doors.UnlockDoors",
+        "sloc": [
+          {
+            "file": "plane_doors.ads",
+            "line": 43
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 9.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 6.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_doors.adb",
+      "check_line": 69,
+      "check_col": 21,
+      "session_dir": 5,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 9.00000035762787E-02
+        }
+      }
+    },
+    {
+      "file": "plane_doors.adb",
+      "line": 71,
+      "col": 44,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "plane_doors.UnlockDoors",
+        "sloc": [
+          {
+            "file": "plane_doors.ads",
+            "line": 43
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 9.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 8.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 8.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 8.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_doors.adb",
+      "check_line": 71,
+      "check_col": 44,
+      "session_dir": 5,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 4,
+          "max_steps": 1,
+          "max_time": 9.00000035762787E-02
+        }
+      }
+    },
+    {
+      "file": "plane_doors.adb",
+      "line": 71,
+      "col": 15,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "info",
+      "entity": {
+        "name": "plane_doors.UnlockDoors",
+        "sloc": [
+          {
+            "file": "plane_doors.ads",
+            "line": 43
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 38,
+              "time": 9.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_doors.adb",
+      "check_line": 71,
+      "check_col": 15,
+      "session_dir": 5,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 9.00000035762787E-02
+        }
+      }
+    },
+    {
+      "file": "plane_doors.adb",
+      "line": 71,
+      "col": 15,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
+      "severity": "info",
+      "entity": {
+        "name": "plane_doors.UnlockDoors",
+        "sloc": [
+          {
+            "file": "plane_doors.ads",
+            "line": 43
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 129,
+              "time": 1.30000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_doors.adb",
+      "check_line": 71,
+      "check_col": 15,
+      "session_dir": 5,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.29999995231628E-01
+        }
+      }
+    },
+    {
+      "file": "plane_doors.ads",
+      "line": 45,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "plane_doors.UnlockDoors",
+        "sloc": [
+          {
+            "file": "plane_doors.ads",
+            "line": 43
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 142,
+              "time": 9.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "plane_doors.ads",
+      "check_line": 45,
+      "check_col": 14,
+      "session_dir": 5,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 9.00000035762787E-02
+        }
+      }
+    }
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane_doors.DoorsOpened",
+          "sloc": [
+            {
+              "file": "plane_doors.ads",
+              "line": 33
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane_doors",
+          "sloc": [
+            {
+              "file": "plane_doors.ads",
+              "line": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsLocked",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 48
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.OpenDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 25
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.UnlockDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 43
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane_doors.GetDoors",
+          "sloc": [
+            {
+              "file": "plane_doors.ads",
+              "line": 56
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane_doors.OpenDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 25
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "plane_doors.UnlockDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 43
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsLocked",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 48
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.OpenDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 25
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.UnlockDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 43
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.DoorsLocked",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 48
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.OpenDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 25
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.UnlockDoors",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 43
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane_doors.GetDoors",
+          "sloc": [
+            {
+              "file": "plane_doors.ads",
+              "line": 56
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane_doors.DoorsClosed",
+          "sloc": [
+            {
+              "file": "plane_doors.ads",
+              "line": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane_doors.DoorsClosed",
+          "sloc": [
+            {
+              "file": "plane_doors.ads",
+              "line": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsUnlocked",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 51
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_doors.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.DoorsUnlocked",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 51
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_doors.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "plane_doors.OpenDoors",
+          "sloc": [
+            {
+              "file": "plane_doors.ads",
+              "line": 25
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsUnlocked",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 51
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_doors.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane_doors.OpenDoors",
+          "sloc": [
+            {
+              "file": "plane_doors.ads",
+              "line": 25
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsUnlocked",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 51
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_doors.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.DoorsUnlocked",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 51
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_doors.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane_doors.OpenDoors",
+          "sloc": [
+            {
+              "file": "plane_doors.ads",
+              "line": 25
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane_doors.DoorsUnlocked",
+          "sloc": [
+            {
+              "file": "plane_doors.ads",
+              "line": 51
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane_doors.DoorsUnlocked",
+          "sloc": [
+            {
+              "file": "plane_doors.ads",
+              "line": 51
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane_doors.DoorsLocked",
+          "sloc": [
+            {
+              "file": "plane_doors.ads",
+              "line": 48
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane_doors.DoorsLocked",
+          "sloc": [
+            {
+              "file": "plane_doors.ads",
+              "line": 48
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_doors.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_doors.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "plane_doors.UnlockDoors",
+          "sloc": [
+            {
+              "file": "plane_doors.ads",
+              "line": 43
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_doors.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane_doors.UnlockDoors",
+          "sloc": [
+            {
+              "file": "plane_doors.ads",
+              "line": 43
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_doors.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_doors.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane_doors.UnlockDoors",
+          "sloc": [
+            {
+              "file": "plane_doors.ads",
+              "line": 43
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_doors.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_doors.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "plane_doors.CloseDoors",
+          "sloc": [
+            {
+              "file": "plane_doors.ads",
+              "line": 21
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_doors.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_doors.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "plane_doors.LockDoors",
+          "sloc": [
+            {
+              "file": "plane_doors.ads",
+              "line": 39
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_doors.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane_doors.CloseDoors",
+          "sloc": [
+            {
+              "file": "plane_doors.ads",
+              "line": 21
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_doors.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_doors.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane_doors.CloseDoors",
+          "sloc": [
+            {
+              "file": "plane_doors.ads",
+              "line": 21
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_doors.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane_doors.LockDoors",
+          "sloc": [
+            {
+              "file": "plane_doors.ads",
+              "line": 39
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "plane_doors.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_doors.adb",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.DoorsClosed",
+            "sloc": [
+              {
+                "file": "plane_doors.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "plane_doors.Put_Line",
+            "sloc": [
+              {
+                "file": "plane_doors.adb",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "plane_doors.LockDoors",
+          "sloc": [
+            {
+              "file": "plane_doors.ads",
+              "line": 39
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "plane_doors.DoorsOpened",
+          "sloc": [
+            {
+              "file": "plane_doors.ads",
+              "line": 33
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "gnatwhy3.transformations.inline_trivial": 2.96875000000000E-01,
+    "codepeer results": 1.85299999429844E-04,
+    "init_why_sections": 1.48169999010861E-03,
+    "gnatwhy3.transformations.detect_polymorphism": 3.12500000000000E-02,
+    "globals/properties (advanced)": 3.49664017558098E-02,
+    "gnatwhy3.transformations.eliminate_literal": 3.12500000000000E-02,
+    "gnatwhy3.run_vcs": 5.92187500000000E+00,
+    "gnatwhy3.transformations.eliminate_algebraic_if_poly": 3.12500000000000E-02,
+    "gnatwhy3.transformations.eliminate_definition_if_poly": 0.00000000000000E+00,
+    "flow analysis": 2.11247000843287E-02,
+    "gnatwhy3.transformations.simplify_formula": 0.00000000000000E+00,
+    "marking": 8.63749999552965E-03,
+    "translation of standard": 1.60999000072479E-02,
+    "gnatwhy3.register_vcs": 1.71875000000000E-01,
+    "gnatwhy3.transformations.eliminate_epsilon": 0.00000000000000E+00,
+    "globals (basic)": 2.36009992659092E-02,
+    "gnatwhy3.schedule_vcs": 1.56250000000000E-02,
+    "gnatwhy3.transformations.prepare_for_counterexmp": 0.00000000000000E+00,
+    "gnatwhy3.save_session": 4.68750000000000E-02,
+    "gnatwhy3.transformations.eliminate_inductive": 0.00000000000000E+00,
+    "gnatwhy3.transformations.encoding_smt_if_poly": 0.00000000000000E+00,
+    "gnatwhy3.transformations.eliminate_unused_hypo": 1.71875000000000E-01,
+    "gnatwhy3.transformations.eliminate_builtin": 1.56250000000000E-02,
+    "gnatwhy3.transformations.discriminate_if_poly": 0.00000000000000E+00,
+    "gnatwhy3.init": 1.84375000000000E+00
+  }
+}
